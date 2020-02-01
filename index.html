@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>WeatherWay Dash</title>
+</head>
+<body>
+  <div class="container">
+    <h1>WeatherWay Dashboard</h1>
+    <div id="forecast-container" class="hide">
+      <h2><span id="city-name"></span></span><span id="showWeatherForcast"></span></h2>
+      <h4>Temperature: <span id="temp"></span></h4>
+      <h4>Humidity: <span id="humidity"></span></h4>
+      <h4>Wind speed: <span id="wind"></span></h4>
+      <h4>UV Index: <span id="uv-index"></span></h4>
+      <div id="forecast-days" class="forecast-grid">
+        <h3>5-Day Forecast:</h3>
+        <span class="day1"></span>
+        <span class="day2"></span>
+        <span class="day3"></span>
+        <span class="day4"></span>
+        <span class="day5"></span>
+      </div>
+    </div>
+    <div class="controls">
+      <input id="city" placeholder="Enter City Name">
+      <button id="getWeatherForecast" class="search-btn btn">Get Forecast</button>
+    </div>
+  </div>
+  <script src="jscript.js"></script>
+</body>
+</html>
